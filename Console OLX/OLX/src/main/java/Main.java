@@ -1,3 +1,5 @@
+import Product.ProductMenu;
+import Product.ProductStorage;
 import mainMenu.MainMenu;
 import user.service.Login;
 import user.service.Registration;
@@ -11,7 +13,10 @@ public class Main {
         Registration reg = new Registration(userStorage);
         Login log = new Login(userStorage);
 
-        UserMenu userMenu = new UserMenu(userStorage);
+        ProductStorage storage = new ProductStorage();
+        ProductMenu productMenu = new ProductMenu(storage);
+
+        UserMenu userMenu = new UserMenu(userStorage, productMenu);
 
         MainMenu mainMenu = new MainMenu(reg, log, userMenu);
 

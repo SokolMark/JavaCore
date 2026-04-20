@@ -5,7 +5,7 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>com.fenrizar.mobfilter</groupId>
-    <artifactId>OLX</artifactId>
+    <artifactId>LabraryTesting</artifactId>
     <version>1.0-SNAPSHOT</version>
 
     <properties>
@@ -16,10 +16,9 @@
     <dependencies>
         <dependency>
             <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>5.10.0</version>
+            <artifactId>junit-jupiter-engine</artifactId>
+            <version>5.10.2</version>
             <scope>test</scope>
         </dependency>
     </dependencies>
-
 </project>
